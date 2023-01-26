@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.attribution {
+  font-size: 11px;
+  color: #fff;
+  text-align: center;
+}
+.attribution a {
+  color: #fff;
+}
+body {
+  background: hsl(257, 40%, 49%);
+}
+.project {
+  padding: 50px 7%;
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/bg-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.project .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 50px;
+}
+.project .wrapper .left {
+  width: 55%;
+}
+.project .wrapper .left img {
+  width: 100%;
+  height: 100%;
+}
+.project .wrapper .right {
+  width: 40%;
+  margin-top: 30px;
+}
+.project .wrapper .right h1 {
+  font-size: 40px;
+  line-height: 50px;
+  color: #fff;
+}
+.project .wrapper .right p {
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #fff;
+  line-height: 22px;
+}
+.project .wrapper .right a {
+  display: inline-block;
+  padding: 10px 35px;
+  margin-top: 15px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+  background-color: #fff;
+  border-radius: 20px;
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+}
+.project .wrapper .right a:hover {
+  transition: 0.4s;
+  background-color: hsl(300, 69%, 71%);
+}
+.project .social {
+  list-style: none;
+  display: flex;
+  text-align: right;
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+}
+.project .social li i {
+  margin: 0 10px;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+}
+.project .social li i:hover {
+  color: hsl(300, 69%, 71%);
+  transition: 0.4s;
+}
+
+@media (max-width: 1036px) {
+  .project .wrapper {
+    display: block;
+  }
+  .project .wrapper .left {
+    width: 100%;
+  }
+  .project .wrapper .right {
+    width: 100%;
+    text-align: center;
+  }
+}
